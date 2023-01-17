@@ -1,0 +1,27 @@
+main: de.nilsang.ANGSentials.Main
+name: ANGSentials
+version: '${project.version}'
+api-version: 1.19
+description: Systemplugin für NilsANG.de Community Server
+authors: ['t0g3pii', 'LetsPlayPhil02']
+depend:
+  - voicechat
+  - Essentials
+  - LuckPerms
+commands:
+  quest:
+    description: Öffnet das Questbuch
+    aliases:
+      - quests
+    permission: ANGSentials.quest
+    permission-message: Du kannst das Questbuch nicht öffnen.
+    usage: "/<command> <args>"
+permissions:
+  ANGSentials.quest:
+    description: Rechte um das Questbuch zu öffnen
+    default: not op
+  ANGSentials.*:
+    description: Alle Rechte
+    default: op
+    children:
+      ANGSentials.quest: true

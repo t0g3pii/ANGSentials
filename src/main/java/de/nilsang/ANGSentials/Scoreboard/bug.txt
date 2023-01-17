@@ -1,0 +1,20 @@
+[19:33:45 INFO]: Team Nils | LetsPlayPhil02 [OP] left the game
+[19:33:48 WARN]: [ANGSentials] Task #49 for ANGSentials v1.0 generated an exception
+java.lang.NullPointerException: Cannot invoke "org.bukkit.scoreboard.Team.setPrefix(String)" because "money" is null
+        at de.nilsang.ANGSentials.Scoreboard.ScoreboardSetter.updateScoreboard(ScoreboardSetter.java:79) ~[angsentials-1.0.jar:?]
+        at de.nilsang.ANGSentials.Scoreboard.listeners.ScoreboardListener.lambda$onPlayerJoin$1(ScoreboardListener.java:74) ~[angsentials-1.0.jar:?]
+        at org.bukkit.craftbukkit.v1_19_R2.scheduler.CraftTask.run(CraftTask.java:101) ~[purpur-1.19.3.jar:git-Purpur-1884]
+        at org.bukkit.craftbukkit.v1_19_R2.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483) ~[purpur-1.19.3.jar:git-Purpur-1884]
+        at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1500) ~[purpur-1.19.3.jar:git-Purpur-1884]
+        at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:482) ~[purpur-1.19.3.jar:git-Purpur-1884]
+        at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1424) ~[purpur-1.19.3.jar:git-Purpur-1884]
+        at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1194) ~[purpur-1.19.3.jar:git-Purpur-1884]
+        at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321) ~[purpur-1.19.3.jar:git-Purpur-1884]
+        at java.lang.Thread.run(Thread.java:833) ~[?:?]
+
+
+Team wurde geleert als Spieler geleavt ist, der Fehler ist dabei in der Konsole aufgetreten? 
+Wurde der Scheduler nicht beendet?
+!!WICHTIG!! (Die Teams wurden NICHT gelöscht, nur geleert!!)
+
+Bug gefunden: Tritt auf wenn mehr wie ein Spieler gleichzeitig (oder vermutlich zu schnell nacheinander) das Spiel verlassen (maybe auch beim beitreten?)
