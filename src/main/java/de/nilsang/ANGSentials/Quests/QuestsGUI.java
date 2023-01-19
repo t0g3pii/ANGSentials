@@ -130,10 +130,10 @@ public class QuestsGUI implements Listener, CommandExecutor {
                     todo[0] = "YAML anlegen und lernen wie man sie benutzt.";
                     todo[1] = "Wenn Spieler joint, prüfen ob bereits Eintrag in der playerData.\nWenn Nein, anlegen und Random 3 Quests zuweisen mit Geld und Stats zurücksetzen!";
                     todo[2] = "Quest täglich um 00:00 für alle löschen.";
-                    todo[3] = "";
+                    todo[3] = "[Done] ";
                     todo[4] = "Automatische Erkennung bei Questabschluss. + Chatnachricht";
                     todo[5] = "Bei Questabschluss dem Spieler Geld geben.";
-                    todo[6] = "";
+                    todo[6] = "[Done] ";
                     todo[7] = "Inventar an Spieler binden, sonst wird Inventar 'getauscht'";
                     todo[8] = "TabCompleter einbasteln";
                     todo[9] = "Listen ausarbeiten. (Max Werte und Money zuweisen)";
